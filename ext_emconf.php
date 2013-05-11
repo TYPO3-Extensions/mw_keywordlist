@@ -1,12 +1,13 @@
 <?php
+
 ########################################################################
-# Extension Manager/Repository config file for ext: "mw_keywordlist"
+# Extension Manager/Repository config file for ext "mw_keywordlist".
 #
-# Auto generated 03-10-2010 13:16
+# Auto generated 14-05-2010 10:34
 #
 # Manual updates:
-# Only the data in the array - anything else is removed by next write.
-# "version" and "dependencies" must not be touched!
+# Only the data in the array - everything else is removed by next
+# writing. "version" and "dependencies" must not be touched!
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
@@ -14,25 +15,36 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Extracts all keywords from the page\'s keyword field and displays a list of keywords and links the page title to the keyword related page.',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '3.0.5',
+	'version' => '3.2.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
-	'TYPO3_version' => '3.6.0-4.4.99',
-	'PHP_version' => '4.0.12-5.2.99',
 	'module' => '',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearcacheonload' => 0,
+	'clearcacheonload' => 1,
 	'lockType' => '',
 	'author' => 'mehrwert',
 	'author_email' => 'typo3@mehrwert.de',
 	'author_company' => 'mehrwert intermediale kommunikation GmbH',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
+	'constraints' => array(
+		'depends' => array(
+			'php' => '5.0.0-5.3.99',
+			'typo3' => '4.5.0-4.6.99',
+		),
+		'conflicts' => array(
+		),
+		'suggests' => array(
+			't3jquery' => '2.0.0-0.0.0'
+		),
+	),
+	'suggests' => array(
+	),
 );
 
 ?>
